@@ -1,8 +1,8 @@
 //your JS code here. If required.
- function secondHighest(num, arr) {
+ function secondHighest(arr) {
     // your code here
     if (arr.length < 2) {
-        return "Infinity";
+        return "-Infinity";
     }
 
     arr.sort();
@@ -14,4 +14,5 @@
             return arr[i];
         }
     }
+	 return "Infinity";
  }
