@@ -14,5 +14,5 @@
             return arr[i];
         }
     }
-	 return "Infinity";
+	 return "-Infinity";
  }
