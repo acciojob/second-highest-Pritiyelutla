@@ -13,7 +13,13 @@
             return -1;
         }
     });
-
+res = ar[ar.length-2];
     
-    return ar[ar.length-2];
+    if(res !== undefined)
+    {
+        return res;
+    }
+    else{
+        return "-Infinity";
+    }
  }
