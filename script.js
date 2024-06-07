@@ -5,7 +5,7 @@
         return "-Infinity";
     }
 
-    arr.sort();
+    arr.sort(function(a, b){return a - b});
 
     for(let i=arr.length -2; i>=0; i--)
     {
