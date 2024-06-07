@@ -1,18 +1,19 @@
 //your JS code here. If required.
  function secondHighest(arr) {
     // your code here
-    if (arr.length < 2) {
+     if (arr.length < 2) {
         return "-Infinity";
     }
 
-    arr.sort(function(a, b){return a - b});
-
-    for(let i=arr.length -2; i>=0; i--)
-    {
-        if(arr[i] !== arr[arr.length - 1])
+    let uniqueArr = [...new Set(arr)];
+    
+    ar = uniqueArr.sort((a, b) =>{
+        if(a < b)
         {
-            return arr[i];
+            return -1;
         }
-    }
-	 return "-Infinity";
+    });
+
+    
+    return ar[ar.length-2];
  }
