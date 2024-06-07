@@ -2,7 +2,7 @@
  function secondHighest(arr) {
     // your code here
      if (arr.length < 2) {
-        return "-Infinity";
+        return "Infinity";
     }
 
     let uniqueArr = [...new Set(arr)];
@@ -20,6 +20,6 @@ res = ar[ar.length-2];
         return res;
     }
     else{
-        return "-Infinity";
+        return "Infinity";
     }
  }
